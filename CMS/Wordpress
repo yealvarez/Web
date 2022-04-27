@@ -1,0 +1,22 @@
+==============================================================================
+[+] Identifying Content Manualy
+==============================================================================
+/wp-content/
+/wp-content/plugins/
+/wp-content/themes/
+/uploads/
+/images/
+
+==============================================================================
+[+] Identifying Content Automaticaly
+==============================================================================
+
+# 
+wpscan --url http://10.10.10.17 --enumerate p,u,t
+
+# Brute Force
+wpscan --url http://10.10.110.100:65000/wordpress/ --wordlist /usr/share/wordlists/rockyou.txt --username admin, james  --threads 20
+wpscan --url example.com --wordlist /usr/share/wordlist/rockyou.txt --username testuser --threads 20
+
+# wpscann with token aggressive
+wpscan --url http://10.10.11.125 --enumerate p,u,t --plugins-detection aggressive --api-token <token ID>
