@@ -11,7 +11,7 @@
 [+] Identifying Content Automaticaly
 ==============================================================================
 
-# 
+# Normal Scann
 wpscan --url http://10.10.10.17 --enumerate p,u,t
 
 # Brute Force
@@ -20,3 +20,6 @@ wpscan --url example.com --wordlist /usr/share/wordlist/rockyou.txt --username t
 
 # wpscann with token aggressive
 wpscan --url http://10.10.11.125 --enumerate p,u,t --plugins-detection aggressive --api-token <token ID>
+
+# nmap script
+http-wordpress-brute.nse
