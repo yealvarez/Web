@@ -18,3 +18,12 @@ document.images[0].src="https://test.com/images/products/large/F-898.jpg"
 https://example.com/?product=shirt&color=blue&newuser&size=m
 var queryString = window.location.search;
 console.log(queryString);
+==============================================================================
+[+] SQLI test
+==============================================================================
+
+document.getElementById(“username”) = “asdf’ or 1=1 or 1=1 or 1=1 or ‘a’=’a”;
+document.getElementById(“password”) = “pwd form”;
+document.getElementById(“login”).click();
+
+
