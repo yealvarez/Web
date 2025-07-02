@@ -1,0 +1,13 @@
+==============================================================================
+[+] Search Favicon
+==============================================================================
+(() => {
+  const link = document.querySelector("link[rel~='icon']")?.href || '/favicon.ico';
+  const a = document.createElement('a');
+  a.href = link.startsWith('http') ? link : location.origin + link;
+  a.download = 'favicon';
+  a.style.display = 'none';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+})();
