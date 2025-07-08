@@ -11,3 +11,22 @@
   a.click();
   document.body.removeChild(a);
 })();
+
+==============================================================================
+[+] Search s3
+==============================================================================
+
+// Extraer posibles URLs de Amazon S3 desde el HTML de la página
+(() => {
+  const html = document.documentElement.innerHTML;
+  const regex = /https?:\/\/[a-zA-Z0-9.-]+\.s3(?:[.-][a-z0-9-]+)?\.amazonaws\.com[^\s"']*/g;
+  const matches = html.match(regex);
+  
+  if (matches && matches.length) {
+    const unique = [...new Set(matches)];
+    console.log("S3 Buckets encontrados:");
+    unique.forEach(url => console.log(url));
+  } else {
+    console.log("No se encontraron URLs de S3.");
+  }
+})();
